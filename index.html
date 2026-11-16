@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saptaparna Dey | Portfolio</title>
+  <meta name="description" content="Portfolio of Saptaparna Dey, B.Tech CSE (AI &amp; ML) student at Shoolini University. Developer, painter and philosophy enthusiast." />
+  <meta name="theme-color" content="#07080f" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='24' fill='%23070810'/><text x='50' y='68' font-size='56' font-family='monospace' font-weight='700' text-anchor='middle' fill='%2300e5ff'>SD</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <canvas id="bg" aria-hidden="true"></canvas>
+  <div class="glow glow-a" aria-hidden="true"></div>
+  <div class="glow glow-b" aria-hidden="true"></div>
+
+  <header class="nav" id="top">
+    <a href="#home" class="logo" aria-label="Home">Saptaparna<span>.</span></a>
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <nav id="navLinks">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact" class="nav-cta">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-text reveal">
+        <p class="eyebrow"><span class="dot"></span> Open to internships &amp; collaborations</p>
+        <h1>Hi, I'm <span class="grad">Saptaparna Dey</span></h1>
+        <p class="role"><span class="prompt">&gt;</span> <span id="typed"></span><span class="cursor">|</span></p>
+        <p class="lead">
+          B.Tech CSE (AI &amp; ML) student who turns ideas into clean, working software,
+          from interactive web apps to machine learning tools.
+        </p>
+        <div class="hero-actions">
+          <a href="#projects" class="btn primary">View Projects</a>
+          <a href="#contact" class="btn ghost">Get in Touch</a>
+        </div>
+        <div class="socials">
+          <a href="https://github.com/saptaparnadey" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.69 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.59.23 2.76.11 3.05.74.81 1.18 1.83 1.18 3.09 0 4.42-2.7 5.4-5.27 5.68.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.51 11.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/saptaparna-dey-b1350b384" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.86 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="mailto:saptaparnadey@shooliniuniversity.com" aria-label="Email">
+            <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 7 9 6 9-6"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="hero-photo reveal">
+        <div class="photo-ring">
+          <img src="./images/profile1.jpg" alt="Profile Picture" width="600" height="600">
+        </div>
+        <div class="chip chip-1">&lt;/&gt; Web</div>
+        <div class="chip chip-2">AI / ML</div>
+        <div class="chip chip-3">C / C++</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <h2 class="sec-title reveal"><span>01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm <strong>Saptaparna Dey</strong>, a second-year B.Tech Computer Science &amp; Engineering
+            student specialising in Artificial Intelligence and Machine Learning at
+            <strong>Shoolini University</strong>. I'm from West Bengal, India.
+          </p>
+          <p>
+            I enjoy building things end to end: responsive front-ends in HTML, CSS and JavaScript,
+            data-driven systems in C and C++, and machine learning applications in Python.
+            I care about code that is readable, well structured and genuinely useful.
+          </p>
+          <p>
+            Away from the keyboard, I paint and explore philosophy. Both shape the way I
+            approach design and problem solving: with creativity, curiosity and an eye for detail.
+          </p>
+        </div>
+        <div class="about-cards reveal">
+          <div class="stat"><span class="num">4</span><span class="lbl">Projects built</span></div>
+          <div class="stat"><span class="num">8</span><span class="lbl">Core technologies</span></div>
+          <div class="stat"><span class="num">AI/ML</span><span class="lbl">Specialisation</span></div>
+          <div class="stat"><span class="num">&infin;</span><span class="lbl">Curiosity</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="skills">
+      <h2 class="sec-title reveal"><span>02.</span> Skills</h2>
+      <div class="skills reveal">
+        <div class="skill-group">
+          <h3>Web</h3>
+          <div class="pills"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Programming</h3>
+          <div class="pills"><span>Python</span><span>C++</span><span>C</span></div>
+        </div>
+        <div class="skill-group">
+          <h3>Data &amp; Tools</h3>
+          <div class="pills"><span>SQL</span><span>Git &amp; GitHub</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <h2 class="sec-title reveal"><span>03.</span> Projects</h2>
+      <div class="projects">
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="folder">&#128193;</span>
+            <a href="https://github.com/saptaparnadey/Wedding-planning-tool" target="_blank" rel="noopener" aria-label="Royal Knot repository">GitHub &#8599;</a>
+          </div>
+          <h3>Royal Knot: Wedding Planning Tool</h3>
+          <p>A user-friendly web application that helps couples organise their wedding in one place, with a clean, elegant interface built from scratch using core web technologies.</p>
+          <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="folder">&#127911;</span>
+            <a href="https://github.com/saptaparnadey/Cpp_Project" target="_blank" rel="noopener" aria-label="Music Playlist Manager repository">GitHub &#8599;</a>
+          </div>
+          <h3>Music Playlist Manager</h3>
+          <p>An object-oriented C++ application for managing songs, artists and playlists, with support for organising and maintaining a complete music library.</p>
+          <ul class="tags"><li>C++</li><li>OOP</li><li>Data Management</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="folder">&#127973;</span>
+            <a href="https://github.com/saptaparnadey/c_project_assignment" target="_blank" rel="noopener" aria-label="Hospital Database Manager repository">GitHub &#8599;</a>
+          </div>
+          <h3>Hospital Database Manager</h3>
+          <p>A C-based management system that handles the full hospital record workflow, including patient, doctor and ward databases, with structured storage and retrieval.</p>
+          <ul class="tags"><li>C</li><li>File Handling</li><li>Database Design</li></ul>
+        </article>
+
+        <article class="card reveal">
+          <div class="card-top">
+            <span class="folder">&#129302;</span>
+            <a href="https://github.com/saptaparnadey/AI-Social-Media-Content-Creator" target="_blank" rel="noopener" aria-label="AI Social Media Manager repository">GitHub &#8599;</a>
+          </div>
+          <h3>AI Social Media Manager</h3>
+          <p>An AI-powered content assistant built on proper model training and core machine learning concepts, wrapped in an interactive Gradio interface.</p>
+          <ul class="tags"><li>Python</li><li>Gradio</li><li>NumPy</li><li>Pandas</li><li>Machine Learning</li></ul>
+        </article>
+
+      </div>
+      <p class="more reveal"><a href="https://github.com/saptaparnadey?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub &rarr;</a></p>
+    </section>
+
+    <section class="section" id="education">
+      <h2 class="sec-title reveal"><span>04.</span> Education</h2>
+      <div class="timeline">
+        <div class="t-item reveal">
+          <span class="t-dot now"></span>
+          <h3>B.Tech, Computer Science &amp; Engineering (AI &amp; ML)</h3>
+          <p class="t-place">Shoolini University</p>
+          <p class="t-meta">Currently pursuing &middot; 2nd Year</p>
+        </div>
+        <div class="t-item reveal">
+          <span class="t-dot"></span>
+          <h3>Higher Secondary Education</h3>
+          <p class="t-place">DAV Public School, HCL Rupnarayanpur</p>
+          <p class="t-meta">Completed</p>
+        </div>
+        <div class="t-item reveal">
+          <span class="t-dot"></span>
+          <h3>Secondary Education</h3>
+          <p class="t-place">DAV Public School, HCL Rupnarayanpur</p>
+          <p class="t-meta">Completed</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section contact" id="contact">
+      <h2 class="sec-title reveal"><span>05.</span> Get In Touch</h2>
+      <p class="contact-lead reveal">
+        I'm always happy to talk about projects, internships or ideas. Reach out through any of the channels below.
+      </p>
+      <div class="contact-grid reveal">
+        <a class="c-card" href="mailto:saptaparnadey@shooliniuniversity.com">
+          <span class="c-icon">&#9993;</span>
+          <span class="c-label">Email</span>
+          <span class="c-value">saptaparnadey@shooliniuniversity.com</span>
+        </a>
+        <a class="c-card" href="tel:+917001095384">
+          <span class="c-icon">&#9742;</span>
+          <span class="c-label">Phone</span>
+          <span class="c-value">+91 70010 95384</span>
+        </a>
+        <a class="c-card" href="https://www.linkedin.com/in/saptaparna-dey-b1350b384" target="_blank" rel="noopener">
+          <span class="c-icon">in</span>
+          <span class="c-label">LinkedIn</span>
+          <span class="c-value">saptaparna-dey</span>
+        </a>
+        <a class="c-card" href="https://github.com/saptaparnadey" target="_blank" rel="noopener">
+          <span class="c-icon">&lt;/&gt;</span>
+          <span class="c-label">GitHub</span>
+          <span class="c-value">@saptaparnadey</span>
+        </a>
+      </div>
+      <div class="center reveal">
+        <a class="btn primary" href="mailto:saptaparnadey@shooliniuniversity.com?subject=Hello%20Saptaparna">Say Hello</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>Designed &amp; built by Saptaparna Dey &middot; <span id="year"></span></p>
+    <a href="#top">Back to top &uarr;</a>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
