@@ -2,7 +2,6 @@
 
 A responsive, dark-themed personal portfolio built with plain **HTML, CSS and JavaScript** (no build step, no dependencies).
 
-**Live site:** https://saptaparnadey.github.io/
 
 ## About
 
